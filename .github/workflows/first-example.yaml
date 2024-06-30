@@ -17,13 +17,6 @@ jobs:
               
             - name: Read files
               run: cat README.md
-    
-    second_job:
-        runs-on: ubuntu-latest
 
-        steps:
-        - name: Checkout Repo
-          uses: actions/checkout@@v4.1.7
-          
-        - name: Generate ASCII Artwork
-          run: cowsay -f dragon "Run for cover, I am a DRAGON...RAWR" >> dragon.txt
+            - name: Generate ASCII Artwork
+              run: cowsay -f dragon "Run for cover, I am a DRAGON...RAWR" >> dragon.txt
