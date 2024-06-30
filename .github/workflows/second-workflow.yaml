@@ -3,7 +3,7 @@ name: My Second workflow
 on: push
 
 jobs:
-    first_job:
+    second_job:
         runs-on: ubuntu-latest
 
         steps:
