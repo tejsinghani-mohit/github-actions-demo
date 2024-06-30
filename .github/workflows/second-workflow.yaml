@@ -1,0 +1,20 @@
+name: My Second workflow
+
+on: push
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Checkout Repo
+          uses: actions/checkout@@v4.1.7
+
+        - name: List and Read file
+          run: |
+            echo "My second workflow"
+            ls -lta
+            cat README.md
+            
+        - name: Generate ASCII Artwork
+          run: cowsay -f dragon "Run for cover, I am a DRAGON...RAWR" >> dragon.txt      
