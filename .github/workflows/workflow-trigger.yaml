@@ -1,4 +1,4 @@
-name: Exploring Variables and Secrets
+name: Workflow triggers
 
 on:
     schedule:
